@@ -3,7 +3,6 @@ import React from 'react';
 export const onRenderBody = ({setHeadComponents}, pluginOptions) => {
   if (process.env.NODE_ENV === 'production' && !pluginOptions.skip) {
     setHeadComponents([
-      <script src={pluginOptions.autoBlockSrc} />,
       <script
         src={pluginOptions.otSDKStubSrc}
         type="text/javascript"
